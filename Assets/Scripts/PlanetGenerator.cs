@@ -66,11 +66,11 @@ public class PlanetGenerator : MonoBehaviour
 
                 foreach (Planet planet in planets)
                 {
-                    float radius = planet.transform.localScale.x * 0.5f + createdRadius;
+                    float radius = planet.transform.localScale.x + createdRadius;
 
-                    if (Vector3.Distance(planet.transform.position, createdPlanet.transform.position) < radius * 2)
+                    if (Vector3.Distance(planet.transform.position, createdPlanet.transform.position) < radius)
                     {
-                        Vector2 orbit = GetRandomPointOnOrbit(planet, planet.transform.localScale.x + createdRadius + radius);
+                        Vector2 orbit = GetRandomPointOnOrbit(planet, planet.transform.localScale.x + radius);
                         createdPlanet.transform.position = planet.transform.position + new Vector3(orbit.x,Random.Range(-height,height), orbit.y);
 
                         isCorrect = false;

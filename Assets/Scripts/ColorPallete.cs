@@ -7,6 +7,8 @@ public class ColorPallete : ScriptableObject
 {
     [SerializeField] private List<Color> _colors;
 
+    public int Length { get => _colors.Count; }
+
     public Color GetColor(int playerId)
     {
         return _colors[playerId];

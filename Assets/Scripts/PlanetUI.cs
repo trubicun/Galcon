@@ -26,12 +26,12 @@ public class PlanetUI : MonoBehaviour
 
     private void UpdateText()
     {
-        if (_planet.PlayerId == 0)
+        if (_planet.PlayerId == 0 || _planet.PlayerId == 1)
         {
             _text.text = _hangar.Count.ToString();
         } else
         {
-            _text.text = "";
+           _text.text = "";
         }
     }
 }

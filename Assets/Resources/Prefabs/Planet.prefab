@@ -302,6 +302,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: eee726a0603036a4b9fcb7b33ff51da3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _selectSize: 1.2
 --- !u!114 &2949717371586263952
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -315,6 +316,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _maxCount: 50
+  _refillTime: 1
+  _ship: {fileID: -5453032425021990847, guid: 8591745bf6a8ad74f898cbcf32c0e7ab, type: 3}
 --- !u!114 &697609944630147276
 MonoBehaviour:
   m_ObjectHideFlags: 0
